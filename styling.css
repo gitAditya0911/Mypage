@@ -122,6 +122,7 @@
         margin-right: 10px;
         border-radius: 20px;
         margin-bottom: 10px;
+        max-width : 580px;
         background: #a8abff;
         box-shadow:  -15px 10px 21px #6f71a8,
         15px -10px 21px #e1e5ff;
