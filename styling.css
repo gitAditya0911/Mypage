@@ -104,7 +104,6 @@
         text-align: center;
         display: none;
     }
-
     .navbar li {
         margin: 10px 0;
     }
@@ -192,18 +191,6 @@
     .image1 {
         display: none; /* Hide the image on mobile screens */
     }
-    .whole{
-        display: inline-block;
-        padding-left: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        border-radius: 20px;
-        margin-bottom: 10px;
-        background: #a8abff;
-        box-shadow:  -15px 10px 21px #6f71a8,
-        15px -10px 21px #e1e5ff;
-        height: auto;
-    }
 
     li:hover {
         box-shadow: 2px 2px 10px white;
@@ -217,12 +204,14 @@
         font-family: "Segoe UI Symbol", cursive;
         text-space: 2px;
     }
-
     .para {
         display: block; /* Create a vertical layout on small screens */
         width: 70%;
         height: auto;/* Occupy full width */
         padding: 20px;
+    }
+    .Hire{
+        display: inline-block;
     }
     .bdy{
         height: auto;
@@ -250,6 +239,7 @@
     .txt2{
         font-size: 20px;
     }
+    .
 }
 @media only screen and (min-width: 601px) {
     .image {
@@ -314,6 +304,7 @@
     margin-left: 40px;
     background-color: #8589ff;
     color: white;
+    margin-bottom: 10px;
     border-style: hidden;
     padding: 10px 20px;
 }
