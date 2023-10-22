@@ -55,7 +55,84 @@
     border-radius: 10px;
     max-height: 100px;
 }
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    .link {
+        text-decoration: none;
+        color: black;
+        font-family: "Segoe UI Symbol", cursive;
+        text-space: 2px;
+    }
+    .navbar li {
+        margin: 10px 0;
+    }
 
+}
+
+.navbar {
+    background-color:#6f71a8 ;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .expanded {
+        display: block;
+    }
+    .link {
+        text-decoration: none;
+        color: black;
+        font-family: "Segoe UI Symbol", cursive;
+        text-space: 2px;
+    }
+
+    .para {
+        display: block; /* Create a vertical layout on small screens */
+        width: 70%;
+        height: auto;/* Occupy full width */
+        padding: 20px;
+    }
+    .bdy{
+        height: auto;
+    }
+}
 .Linkedin {
     display: inline-block;
     transition: all 0.2s ease-in;
@@ -122,19 +199,10 @@
         margin-right: 10px;
         border-radius: 20px;
         margin-bottom: 10px;
-        max-width : 580px;
         background: #a8abff;
         box-shadow:  -15px 10px 21px #6f71a8,
         15px -10px 21px #e1e5ff;
         height: auto;
-    }
-    li {
-        display: inline-block;
-        margin-left: 135px;
-        text-align: center;
-        text-decoration: none;
-        font-family: "Segoe UI Symbol", cursive;
-        color: #090909;
     }
 
     li:hover {
@@ -149,14 +217,15 @@
         font-family: "Segoe UI Symbol", cursive;
         text-space: 2px;
     }
-    .navbar ul {
-        text-align: center;
-        display: inline-grid;
-    }
+
     .para {
         display: block; /* Create a vertical layout on small screens */
-        width: 100%; /* Occupy full width */
+        width: 70%;
+        height: auto;/* Occupy full width */
         padding: 20px;
+    }
+    .bdy{
+        height: auto;
     }
     .imagediv {
         margin: 0 auto; /* Center the image div */
@@ -168,7 +237,8 @@
         margin: 0 auto; /* Center the LinkedIn button */
         display: block;
         position: relative; /* relative position -> easy centering */
-        top: 0; /* Reset the top position */
+        top: 0;
+        text-align: center;/* Reset the top position */
     }
     .BTNDIV{
         max-height: 100%;
@@ -186,40 +256,22 @@
         display: inline-block; /* Reappear the image on larger screens */
     }
 
-    .navbar {
-        bottom: 20%;
-        letter-spacing: 2px;
+    .txt {
         text-decoration: none;
-        border: #090909;
-    }
-
-    li {
-        display: inline-block;
-        margin-left: 25px;
-        text-decoration: none;
-        font-family: "Segoe UI Symbol", cursive;
         color: #090909;
+        font-family: "Segoe UI Symbol", cursive;
     }
-
-    li:hover {
-        box-shadow: 2px 2px 10px white;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-
     .link {
         text-decoration: none;
         color: black;
         font-family: "Segoe UI Symbol", cursive;
         text-space: 2px;
     }
-
-    .txt {
-        text-decoration: none;
-        color: #090909;
-        font-family: "Segoe UI Symbol", cursive;
+    li:hover {
+        box-shadow: 2px 2px 10px white;
+        border-radius: 10px;
+        cursor: pointer;
     }
-
     .para {
         display: inline-block;
         right: 80px;
