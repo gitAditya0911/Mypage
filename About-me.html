@@ -188,6 +188,258 @@
             font-family: "Segoe UI Symbol",cursive;
             text-space: 2px;
         }
+        .image {
+            width: 75px;
+            height: 75px;
+            align-items: center;
+            shape-image-threshold: inherit;
+            margin-top: 2px;
+            border-radius: 50px;
+            margin-left: 2px;
+        }
+
+        .image:hover {
+            box-shadow: 1px 2px 10px white;
+        }
+
+        .imagediv {
+            height: 80px;
+            width: 80px;
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            border-radius: 137px;
+            background: #8589ff;
+            box-shadow: -23px 23px 46px #434466, 23px -23px 46px #ffffff;
+            align-items: center;
+        }
+
+        .namediv {
+            margin-top: 10px;
+            margin-left: 10px;
+            display: inline-block;
+            align-items: center;
+            vertical-align: middle;
+        }
+
+        .name {
+            margin-top: 10px;
+            text-align: center;
+            horiz-align: center;
+            vertical-align: middle;
+            display: inline-block;
+            font-family: "Californian FB", cursive;
+        }
+
+        .bdy {
+            border-radius: 20px;
+            background: #a8abff;
+            box-shadow:  -35px 35px 41px #6f71a8,
+            35px -35px 41px #e1e5ff;
+            height: auto;
+        }
+
+        .headerfile {
+            background: linear-gradient(225deg, #979ae6, #b4b7ff);
+            border-radius: 10px;
+            max-height: 100px;
+        }
+        @media screen and (max-width: 768px) {
+            header {
+                text-align: center;
+            }
+            .navbar ul {
+                flex-direction: column;
+                text-align: center;
+                display: none;
+            }
+            .link {
+                text-decoration: none;
+                color: black;
+                font-family: "Segoe UI Symbol", cursive;
+                text-space: 2px;
+            }
+            .navbar li {
+                margin: 10px 0;
+            }
+
+        }
+
+        .navbar {
+            background-color:#6f71a8 ;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        @media screen and (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                text-align: center;
+                display: none;
+            }
+
+            .navbar li {
+                margin: 10px 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .expanded {
+                display: block;
+            }
+            .link {
+                text-decoration: none;
+                color: black;
+                font-family: "Segoe UI Symbol", cursive;
+                text-space: 2px;
+            }
+            .bdy{
+                height: auto;
+            }
+        }
+        .Linkedin {
+            display: inline-block;
+            transition: all 0.2s ease-in;
+            position: absolute;
+            top: 57px;
+            right: 20px;
+            font-family: "Segoe UI Symbol",cursive;
+            height: 35px;
+            background-color: white;
+            color: #090909;
+            text-decoration: none;
+            transform: translateY(-50%);
+            overflow: hidden;
+            z-index: 1;
+            padding: 0.7em 1.7em;
+            font-size: 18px;
+            border-radius: 20px;
+            border: 1px solid #0077b5;
+        }
+
+        .Linkedin p {
+            position: absolute;
+            top: 0.4em;
+            left: 1.2em;
+            margin: 0;
+            padding: 0;
+            transition: .5s;
+            color: #0077b5;
+        }
+
+        .Linkedin svg {
+            position: absolute;
+            top: 0.45em;
+            right: 0.5em;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            transition: 0.5s;
+            height: 1em;
+            fill: #fff;
+        }
+
+        .Linkedin:hover p {
+            left: 0.6em;
+            color: #fff;
+        }
+
+        .Linkedin:hover svg {
+            opacity: 1;
+        }
+
+        .Linkedin:hover {
+            background-color: #0077b5;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            li:hover {
+                box-shadow: 2px 2px 10px white;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            .link {
+                text-decoration: none;
+                color: black;
+                font-family: "Segoe UI Symbol", cursive;
+                text-space: 2px;
+            }
+            .bdy{
+                height: auto;
+            }
+            .imagediv {
+                margin: 0 auto; /* Center the image div */
+            }
+            .namediv {
+                text-align: center; /* Center the name div */
+            }
+            .Linkedin {
+                margin: 0 auto; /* Center the LinkedIn button */
+                display: block;
+                position: relative; /* relative position -> easy centering */
+                top: 0;
+                text-align: center;/* Reset the top position */
+            }
+            .BTNDIV{
+                max-height: 100%;
+                max-width: 100%;
+            }
+
+        }
+        @media only screen and (min-width: 601px) {
+            .image {
+                display: inline-block; /* Reappear the image on larger screens */
+            }
+
+            .txt {
+                text-decoration: none;
+                color: #090909;
+                font-family: "Segoe UI Symbol", cursive;
+            }
+            .link {
+                text-decoration: none;
+                color: black;
+                font-family: "Segoe UI Symbol", cursive;
+                text-space: 2px;
+            }
+            li:hover {
+                box-shadow: 2px 2px 10px white;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .maintext {
+            text-decoration: none;
+            color: #090909;
+        }
+
+        .maintext:hover {
+            text-shadow: 2px 2px 5px white;
+            transition: 0.7s;
+        }
+
         .maintext{
             text-decoration: none;
             color: black;
@@ -225,7 +477,7 @@
         <img class="image" src="image.png" alt="">
     </div>
     <div class="namediv">
-        <h1 class="name"><a href="MyPage.html" class="maintext"> Aditya Ranjan Dhinda</a></h1>
+        <h1 class="name"><a href="index.html" class="maintext"> Aditya Ranjan Dhinda</a></h1>
     </div>
     <div class="BTNDIV">
         <button class="Linkedin">
@@ -240,16 +492,15 @@
 </header>
 <div class="navbar">
     <nav class="navigation">
-        <div>
-            <ul>
-                <li><a href="MyPage.html" class="link"><b>Home</b></a></li>
-                <li><a href="" class="link"><b>Projects</b></a></li>
-                <li><a href="" class="link"><b>Certificates</b></a></li>
-                <li><a href="" class="link"><b>Blogs</b></a></li>
+        <span class="menu-icon">&#9776;</span>
+            <ul class="expanded">
+                <li><a href="index.html" class="link"><b>Home</b></a></li>
+                <li><a href="https://github.com/gitAditya0911?tab=projects" class="link"><b>Projects</b></a></li>
+                <li><a href="Certificates.html" class="link"><b>Certificates</b></a></li>
+                <li><a href="https://www.blogger.com/blog/posts/5583485494845115720?hl=en&tab=jj" class="link"><b>Blogs</b></a></li>
                 <li><a href="https://github.com/gitAditya0911?tab=repositories" target="_blank" class="link"><b>Repositories</b></a></li>
                 <li><a href="" class="link"><b>About Me</b></a></li>
             </ul>
-        </div>
     </nav>
 </div>
 <div class="bio-container">
@@ -278,4 +529,17 @@
         Thank you for taking the time to get to know me. I look forward to connecting with you and exploring the possibilities of working together.
     </p>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.querySelector(".menu-icon").addEventListener("click", function () {
+        var expandedMenu = document.querySelector(".expanded");
+        if (expandedMenu.style.display === "block") {
+            expandedMenu.style.display = "none";
+        } else {
+            expandedMenu.style.display = "block";
+        }
+    });
+</script>
 </body>
